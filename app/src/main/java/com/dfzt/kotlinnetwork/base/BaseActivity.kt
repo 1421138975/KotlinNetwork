@@ -12,6 +12,7 @@ abstract class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutId())
         initView()
+        initData()
     }
 
     //获取布局文件
@@ -23,6 +24,10 @@ abstract class BaseActivity : AppCompatActivity() {
      * 不加open 就是 == java的 public final void initView()
      */
     open fun initView(){
+
+    }
+
+    open fun initData(){
 
     }
 
